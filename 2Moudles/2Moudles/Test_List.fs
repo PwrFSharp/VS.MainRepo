@@ -14,6 +14,8 @@ let TestOfReversingList() =
   let _expectedVal = [3;2;1]
   let _reachedVal = Lists.palindrome _inputVal1
 
+  printfn "%A" _reachedVal
+
   Assert.AreEqual(_expectedVal,_reachedVal)
 
 [<Test>]
@@ -22,6 +24,8 @@ let TestOfLengthList() =
 
   let _expectedVal = 3
   let _reachedVal = Lists.length _inputVal1
+
+  printfn "%A" _reachedVal
 
   Assert.AreEqual(_expectedVal,_reachedVal)
 
