@@ -68,11 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
     <Compile Include="Numeric.fs" />
     <Compile Include="Test_Numeric.fs" />
     <Compile Include="Lists.fs" />
     <Compile Include="Test_List.fs" />
+    <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
