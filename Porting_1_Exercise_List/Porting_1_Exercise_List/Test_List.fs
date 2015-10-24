@@ -9,15 +9,15 @@ open MyNamespace.Lists
 // ======== Lists 1.1 ============
 [<Test>]
 let ListPalindromeWithRev() =
-  let _inputVal1 = [1;2;3]
+  let _inputVal1 = [3;2;3]
 
-  let _expectedVal = [3;2;1]
+  let _expectedVal = true
   let _reachedVal = palindrome _inputVal1
 
   Assert.AreEqual(_expectedVal,_reachedVal)
 
 [<Test>]
-let TestOfLengthList() =
+let ListLength() =
   let _inputVal1 = [1;2;3]
 
   let _expectedVal = 3
@@ -26,10 +26,11 @@ let TestOfLengthList() =
   Assert.AreEqual(_expectedVal,_reachedVal)
 
 [<Test>]
-let TestOfReversingList() =
-  let _inputVal1 = [1;2;3]
+let ListSquare() =
+  let _inputVal1 = [1;2;3;-4]
 
-  let _expectedVal = [3;2;1]
-  let _reachedVal = palindrome _inputVal1
+  let _expectedVal = [1;4;9;16]
+  let _reachedVal = sqr _inputVal1
 
   Assert.AreEqual(_expectedVal,_reachedVal)
+
