@@ -4,6 +4,7 @@ open System
 open System.Collections
 open NUnit.Framework
 open NUnit.Framework.Constraints
+open MyNamespace
 
 // ======== Lists 1.1 ============
 [<Test>]
