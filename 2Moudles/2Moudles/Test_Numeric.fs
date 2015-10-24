@@ -4,6 +4,7 @@ open System
 open System.Collections
 open NUnit.Framework
 open NUnit.Framework.Constraints
+open Numerics.Numeric
 
 // ======== Lists 1.1 ============
 [<Test>]
@@ -12,6 +13,6 @@ let TestOfAddingValues() =
   let _inputVal2 = 1;
 
   let _expectedVal = 1;
-  let _reachedVal = Numeric.add(_inputVal1,_inputVal2)
+  let _reachedVal = add(_inputVal1,_inputVal2)
 
   Assert.AreEqual(_expectedVal,_reachedVal)

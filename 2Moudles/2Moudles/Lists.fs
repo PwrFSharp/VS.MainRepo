@@ -6,4 +6,3 @@
   let rec length aList = 
     if aList = [] then 0
     else 1 + length (List.tail aList)
-
