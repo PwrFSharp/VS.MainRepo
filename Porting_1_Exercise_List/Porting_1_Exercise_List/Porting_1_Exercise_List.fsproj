@@ -70,9 +70,16 @@
     <None Include="App.config" />
     <Compile Include="Numeric.fs" />
     <Compile Include="Test_Numeric.fs" />
-    <Compile Include="Lists.fs" />
-    <Compile Include="Test_List.fs" />
+    <Compile Include="BT_List.fs" />
+    <Compile Include="BT_ListOfLists.fs" />
+    <Compile Include="BT_Test_ListOfList.fs" />
     <None Include="packages.config" />
+    <Compile Include="BT_Element.fs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="BT_Test_Element.fs" />
+    <Compile Include="BT_Test_List.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>

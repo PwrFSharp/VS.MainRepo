@@ -6,7 +6,6 @@ open NUnit.Framework
 open NUnit.Framework.Constraints
 open Numerics.Numeric
 
-// ======== Lists 1.1 ============
 [<Test>]
 let TestOfAddingValues() =
   let _inputVal1 = 0;
