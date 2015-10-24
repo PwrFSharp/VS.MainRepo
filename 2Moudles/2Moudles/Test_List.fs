@@ -16,3 +16,12 @@ let TestOfReversingList() =
 
   Assert.AreEqual(_expectedVal,_reachedVal)
 
+[<Test>]
+let TestOfLengthList() =
+  let _inputVal1 = [1;2;3]
+
+  let _expectedVal = 3
+  let _reachedVal = Lists.length _inputVal1
+
+  Assert.AreEqual(_expectedVal,_reachedVal)
+
