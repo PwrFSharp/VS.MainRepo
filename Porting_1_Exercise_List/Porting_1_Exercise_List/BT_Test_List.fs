@@ -37,12 +37,22 @@ let BT_ListSquare() =
   Assert.AreEqual(_expectedVal,_reachedVal)
 
 [<Test>]
-let BT_ListAppend() =
+let BT_ListAppendToList() =
   let _inputVal1 = [1;2;3]
   let _inputVal2 = [3;2;1]
 
   let _expectedVal = [1;2;3;3;2;1]
-  let _reachedVal = append (_inputVal1,_inputVal2)
+  let _reachedVal = appendLists (_inputVal1,_inputVal2)
+
+  Assert.AreEqual(_expectedVal,_reachedVal)
+
+[<Test>]
+let BT_ListEnqueue() =
+  let _inputVal1 = [1;2;3]
+  let _inputVal2 = [4]
+
+  let _expectedVal = [1;2;3;4]
+  let _reachedVal = enqueue (_inputVal1,_inputVal2)
 
   Assert.AreEqual(_expectedVal,_reachedVal)
 
@@ -75,7 +85,19 @@ let BT_ListValuesLowerComparator() =
   let _inputVal2 = 5
   
   let _expectedVal = true
-  let _reachedVal = AreAllLowerThan ( _inputVal1,_inputVal2 )
+  let _reachedVal = areAllLowerThan ( _inputVal1,_inputVal2 )
+
+  let _reachedLogic = _expectedVal = _reachedVal
+
+  Assert.True(_reachedLogic)
+
+[<Test>]
+let BT_ListFactoryBetweenScopes() =
+  let _inputVal1 = 4
+  let _inputVal2 = 8
+  
+  let _expectedVal = [4;5;6;7;8]
+  let _reachedVal = generateAllInclusive ( _inputVal1,_inputVal2 )
 
   let _reachedLogic = _expectedVal = _reachedVal
 
