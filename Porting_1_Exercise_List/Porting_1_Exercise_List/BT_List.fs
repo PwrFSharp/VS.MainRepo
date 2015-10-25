@@ -30,6 +30,10 @@ module List =
     let rec generateAllInclusive (aLowerScope,aHigherScope) =
       if aLowerScope = aHigherScope then aLowerScope::[]
       else aLowerScope :: generateAllInclusive (aLowerScope+1,aHigherScope)
+
+    let rec toString (aList1,aSeparator) = 
+      if List.tail aList1 = [] then List.head aList1^""
+      else List.head aList1 ^ aSeparator ^ toString(List.tail aList1,aSeparator)
       
 
 module List_Checkers =

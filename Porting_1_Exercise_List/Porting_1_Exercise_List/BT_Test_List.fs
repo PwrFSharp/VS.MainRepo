@@ -103,3 +103,18 @@ let BT_ListFactoryBetweenScopes() =
 
   Assert.True(_reachedLogic)
 
+[<Test>]
+let BT_ListOfStringsJoiner() =
+  let _inputVal1 = ["To"; "jest"; "napis"]
+  let _inputVal2 = "-"
+  
+  let _expectedVal = "To-jest-napis"
+  let _reachedVal = toString ( _inputVal1,_inputVal2 )
+
+  printfn "%s" _expectedVal
+  printfn "%s" _reachedVal
+
+  let _reachedLogic = _expectedVal = _reachedVal
+
+  Assert.True(_reachedLogic)
+
