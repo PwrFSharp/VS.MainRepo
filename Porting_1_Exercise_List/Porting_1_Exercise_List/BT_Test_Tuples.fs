@@ -19,3 +19,14 @@ let BT_TuplesGetThird() =
 
   Assert.True(_reachedComparison)
 
+[<Test>]
+let BT_TuplesSumFourT() =
+  let _inputVal1 = (3.,2.,5.,1.)
+  let _expectedVal = 11.
+
+  let _reachedValue = sumAll _inputVal1
+
+  let _reachedComparison = _expectedVal = _reachedValue 
+
+  Assert.True(_reachedComparison)
+
