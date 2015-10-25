@@ -6,6 +6,7 @@ open System.Collections
 open NUnit.Framework
 open NUnit.Framework.Constraints
 open BT.List
+open BT.List_Checkers
 
 // ======== Lists 1.1 ============
 [<Test>]
@@ -63,6 +64,18 @@ let BT_ListSummer() =
   
   let _expectedVal = 10.
   let _reachedVal = sum _inputVal1
+
+  let _reachedLogic = _expectedVal = _reachedVal
+
+  Assert.True(_reachedLogic)
+
+[<Test>]
+let BT_ListValuesLowerComparator() =
+  let _inputVal1 = [1;2;3;4]
+  let _inputVal2 = 5
+  
+  let _expectedVal = true
+  let _reachedVal = AreAllLowerThan ( _inputVal1,_inputVal2 )
 
   let _reachedLogic = _expectedVal = _reachedVal
 

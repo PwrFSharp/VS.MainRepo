@@ -1,6 +1,5 @@
 ﻿namespace BT
-  module List =
-
+module List =
     let palindrome aList1= List.rev aList1= aList1
 
     let rec length aList1= 
@@ -23,3 +22,10 @@
     let rec sum aList = 
       if aList = [] then 0.
       else List.head aList + sum (List.tail aList)
+
+module List_Checkers =
+      let rec AreAllLowerThan(aList1, aVal) = 
+        if aList1 = [] then true
+        else if ( ( List.head aList1 ) < aVal ) then true && AreAllLowerThan(List.tail aList1, aVal)
+        else false
+        
