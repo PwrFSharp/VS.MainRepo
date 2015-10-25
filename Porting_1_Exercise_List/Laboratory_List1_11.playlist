@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="BT.Test.Tuples.BT_TuplesSumFourT" /><Add Test="BT.Test.List.BT_ListValuesLowerComparator" /><Add Test="BT.Test.List.BT_ListSummer" /><Add Test="BT.Test.List.BT_ListOfStringsJoiner" /></Playlist>
