@@ -9,7 +9,7 @@ open BT.ListOfLists
 
 // ======== Lists 1.1 ============
 [<Test>]
-let BT_ListOfListFlatten() =
+let TestOfReversingList() =
   let _inputVal1 = [1;2;1]
   let _inputVal2 = [1;2;1]
     
