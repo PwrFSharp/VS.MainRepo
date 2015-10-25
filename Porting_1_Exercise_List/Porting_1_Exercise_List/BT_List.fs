@@ -19,3 +19,7 @@
       if aList1=[] then 0
       else if List.head aList1= aObject then 1+count(aObject,List.tail aList1)
       else count(aObject,List.tail aList1)
+
+    let rec sum aList = 
+      if aList = [] then 0.
+      else List.head aList + sum (List.tail aList)

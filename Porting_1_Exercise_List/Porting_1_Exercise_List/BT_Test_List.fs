@@ -57,3 +57,14 @@ let BT_ListCounter() =
 
   Assert.True(_reachedLogic)
 
+[<Test>]
+let BT_ListSummer() =
+  let _inputVal1 = [5.;3.;2.]
+  
+  let _expectedVal = 10.
+  let _reachedVal = sum _inputVal1
+
+  let _reachedLogic = _expectedVal = _reachedVal
+
+  Assert.True(_reachedLogic)
+
