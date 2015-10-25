@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="BT.Test.List.BT_ListAppend" /><Add Test="BT.Test.Element.BT_ElementDuplicate" /><Add Test="BT.Test.List.BT_ListPalindromeWithRev" /><Add Test="BT.Test.ListOfList.BT_ListOfListFlatten" /><Add Test="BT.Test.List.BT_ListLength" /><Add Test="BT.Test.List.BT_ListCounter" /><Add Test="BT.Test.List.BT_ListSquare" /></Playlist>
